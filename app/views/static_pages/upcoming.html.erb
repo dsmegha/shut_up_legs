@@ -1,2 +1,105 @@
-<h1>StaticPages#upcoming</h1>
-<p>Find me in app/views/static_pages/upcoming.html.erb</p>
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+    	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        <div class="navbar-header">
+        	<a href="/" class="pull-left"><%= image_tag("logo.png" , size: "160x80") %></a>
+            <a class="navbar-brand" href="#"></a>
+			        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+
+            <ul class="nav navbar-nav">
+                <li><a href="/"> Home</a></li>
+                <li class="dropdown active">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Races <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="upcoming">Upcoming Race</a></li>
+                            <li><a href="calendar">Race Calendar</a></li>
+                            <li><a href="rules">Rules and Regulations</a></li>
+                        </ul>
+                    </li>
+                <li><a href="aboutus"> About Us</a></li>
+                <li><a href="sponsors"> Sponsors</a></li>
+                <li><a href="team"> The team</a></li>
+                <li><a href="contactus"> Contact Us</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                    <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook"></i></a>                    
+                </ul>
+        </div>
+        
+    </div>
+    </nav>
+<div class="container after-navbar">
+        <div class="row row-content">
+            <p style="padding:20px;"></p>
+            <div class="col-xs-12">
+               <h1>Individual Time Championship - Road :</h1>
+            </div>
+        </div>
+        
+        <div class="row row-content">
+           <div class="col-xs-12 col-sm-9">
+            <table class = "table-responsive">
+                <tr>
+                    <th>Race Date</th>
+                    <td> 01-01-2015</td>
+                </tr>
+                <tr>
+                    <th>Race Start Point</th>
+                    <td> HD Kote road</td>
+                </tr>
+                <tr>
+                    <th>Race start time</th>
+                    <td> 7.00 am</td>
+                </tr>
+                <tr>
+                    <th>Race Cut-off time</th>
+                    <td> 8.30 am</td>
+                </tr>
+                <tr>
+                    <th>Race distance</th>
+                    <td>7km</td>
+                </tr>
+                <tr>
+                    <th>Type of the race</th>
+                    <td> ITT Road Race</td>
+                </tr>
+                <tr>
+                    <th>Race course </th>
+                    <td> Route profile on strava <a href="https://www.strava.com/activities/382979936"> here </a> </td>
+                </tr>
+                <tr>
+                    <th>Race Categories</th>
+                    <td> Men, Under-18 and Women</td>
+                </tr>
+                <tr>
+                    <th>Registration Fee</th>
+                    <td> 300</td>
+                </tr>
+
+            </table>            
+           <iframe height='405' width='590' frameborder='0' allowtransparency='true' scrolling='no' src='https://www.strava.com/activities/446970967/embed/1ba43fee1c46c5ea5c8fbbc159434bce985dcda5'></iframe>
+        </div>
+    
+           <div class="col-xs-12 col-sm-3">
+              Register for the race <a href="#"> here </a>
+           </div>
+       </div>
+            
+        <div class="row row-content">
+           <div class = "col-xs-12">
+            <p>
+            <strong>About the Format :</strong>
+            An individual time trial (ITT) is a road bicycle race in which cyclists race alone against the clock on flat or rolling terrain, or up a mountain road. There are also track-based time trials where riders compete in velodromes, and team time trials (TTT). ITTs are also referred to as "the race of truth", as winning depends only on each rider's strength and endurance, and not on help provided by team-mates and others riding ahead and creating a slipstream.
+            Starting times are at equal intervals, usually one or two minutes apart. The starting sequence is usually based on the finishing times in preceding races (or preceding stages in the case of a multi-stage race) with the highest ranked cyclist starting last. Starting later gives the racer the advantage of knowing what time they need to beat (and also makes the event more interesting to spectators). Competitors are not permitted to draft (ride in the slipstream) behind each other. Any help between riders is forbidden. The rider with the fastest time is declared the winner.
+        </p>
+            
+       </div>
+
+    </div>
+</div>

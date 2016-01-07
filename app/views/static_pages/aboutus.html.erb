@@ -1,2 +1,70 @@
-<h1>StaticPages#aboutus</h1>
-<p>Find me in app/views/static_pages/aboutus.html.erb</p>
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+    	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        <div class="navbar-header">
+        	<a href="/" class="pull-left"><%= image_tag("logo.png" , size: "160x80") %></a>
+            <a class="navbar-brand" href="#"></a>
+			        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+
+            <ul class="nav navbar-nav">
+                <li><a href="/"> Home</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Races <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="upcoming">Upcoming Race</a></li>
+                            <li><a href="calendar">Race Calendar</a></li>
+                            <li><a href="rules">Rules and Regulations</a></li>
+                        </ul>
+                    </li>
+                <li class="active"><a href="aboutus"> About Us</a></li>
+                <li><a href="sponsors"> Sponsors</a></li>
+                <li><a href="team"> The team</a></li>
+                <li><a href="contactus"> Contact Us</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                    <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook"></i></a>                    
+                </ul>
+        </div>
+        
+    </div>
+    </nav>
+<div class="container after-navbar">
+        <div class="row row-content ">
+            <p style="padding:20px;"></p>
+            <h1> About Us</h1>
+            A constant fight in the mind to reach your goal. ‘Shut up legs’ was devised to spread the racing culture amongst passionate cyclists in Mysore. A series of races will be held throughout the year which will include both road biking and mountain biking. For the novices, here’s a perfect exposure to racing. If you are from Mysore, grab this opportunity to explore your own city. If you are not, all the more reason to come visit. So what are you waiting for? Get your bums on the saddle and embark upon this journey through the undulations, curves and paved roads.
+            <h2>About the event:</h2>
+            <ul>
+                <li>A series of cycling races will be held regularly throughout the year. </li>
+                <li>It will include both mountain biking and road biking.</li>
+            </ul>
+            <h2>Timing:</h2>
+            <ul>
+                <li>The races are time manually</li>
+                <li>We assure accurate results, though not precise to the millisecond.</li>
+            </ul>
+            <h2>Registration:</h2>
+            <ul>
+                <li>You can register online on our website.</li>
+                <li>Offline registration will be available at one of our registration partners mentioned.</li>
+                <li>Registrations will close a week prior to the race.</li>
+                <li>Registration fee is Rs. 200/-, for the Men and Women coategory. It is 100/- for Under-18. This has to be paid at the time of registration.</li>
+            </ul>
+            <h2>Refund:</h2>
+            <ul>
+                <li>Registration fee is not refundable.</li>
+                <li>However, if informed 24 hours prior to the race it can be carried over for the registration to the next race.</li>
+            </ul>
+            <h2>Facilities:</h2>
+            <ul>
+                <li>Refreshments will be provided at the starting point that will include water, salts and some snacks.</li>
+                <li>Bike transport will not be provided since the race venue will be within the city or at a close proximity.</li>
+            </ul>            
+        </div>        
+</div>
