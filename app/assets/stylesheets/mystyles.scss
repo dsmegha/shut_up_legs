@@ -1,0 +1,191 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "bootstrap-social";
+
+
+$bgDefault      : #A186BD;
+$bgHighlight    : #A186BD;
+$colDefault     : #593f73;
+$colHighlight   : #3f2c52;
+$colActive      : #000000;
+$bgBody         : #E9CEFF;
+$colBody        : #0c0810;
+
+.row-header {
+  margin: 0px auto;
+  padding: 0px auto;
+}
+.row-content {
+  margin: 0px auto;
+  min-height: 50px;
+}
+.row-footer {
+  background-color: $bgDefault;
+  margin: 0px auto;
+  font-style: italic;
+}
+.page-wrap {
+  min-height: 100%;
+  /* equal to footer height */
+
+  margin-bottom: -142px;
+}
+.page-wrap:after {
+  content: "";
+  display: block;
+  height: 142px;
+}
+.site-footer {
+  background: orange;
+}
+.jumbotron {
+  margin: 0px auto;
+  padding: 70px 30px 70px 30px;
+  background: #66cc66;
+  color: floralwhite;
+}
+.without-padd {
+  padding: 0px;
+}
+.container-fluid {
+  padding: 0px;
+}
+.carousel {
+  background: $bgDefault;
+}
+.carousel .item {
+  height: 600px;
+}
+.carousel .item img {
+  left: 0;
+width: 100%;
+  position: absolute;
+  top: -200px;
+}
+
+.img-thumbnail {
+  padding: 0;
+}
+
+.table-bordered > thead > tr > th, .table-bordered > tbody > tr > th, .table-bordered > tfoot > tr > th, .table-bordered > thead > tr > td, .table-bordered > tbody > tr > td, .table-bordered > tfoot > tr > td {
+   padding: 10px; 
+}
+.table-calendar > thead > tr > th, .table-calendar > tbody > tr > th, .table-calendar > tfoot > tr > th, .table-calendar > thead > tr > td, .table-calendar > tbody > tr > td, .table-calendar > tfoot > tr > td {
+  border: 1px solid #000000;
+  text-align: center;
+}  
+ 
+.img-responsive2 {  
+    max-width: 15%;
+    height: auto;
+}
+
+.navbar-default {
+  background-color: $bgDefault;
+  border-color: $bgHighlight;
+  font-size: 1.4em;
+  .navbar-brand {
+    color: $colDefault;
+    &:hover, &:focus { 
+      color: $colHighlight; }}
+  .navbar-text {
+    color: $colDefault; }
+  .navbar-nav {
+    > li {
+      > a {
+        color: $colDefault;
+        &:hover,  &:focus {
+          color: $colHighlight; }}}
+    > .active {
+      > a, > a:hover, > a:focus {
+        color: $colActive;
+        background-color: $bgHighlight; }}
+    > .open {
+      > a, > a:hover, > a:focus {
+        color: $colHighlight;
+        background-color: $bgHighlight; }}}
+  .navbar-toggle {
+    border-color: $bgHighlight;
+    &:hover, &:focus {
+      background-color: $bgHighlight; }
+    .icon-bar {
+      background-color: $colDefault; }}
+  .navbar-collapse,
+  .navbar-form {
+    border-color: $colDefault; }
+  .navbar-link {
+    color: $colDefault;
+    &:hover {
+      color: $colHighlight; }}}
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu {
+    > li > a {
+      color: $colDefault;
+      background-color: $bgDefault;
+      &:hover, &:focus {
+        color: $colHighlight; }}
+    > .active {
+      > a, > a:hover, > a:focus, {
+        color: $colHighlight;
+        background-color: $bgHighlight; }}}
+}
+
+.navbar-default .navbar-nav .open .dropdown-menu>li>a, .navbar-default .navbar-nav .open .dropdown-menu {
+    font-size: 1em;
+    background-color: $bgDefault;
+    color: $colDefault;
+    border: 0;
+  }
+.navbar-right{
+  padding-right: 50px;
+}
+
+.slightly-down {
+  padding-top: 27px;
+}
+.vcenter {
+  display: inline-block;
+  vertical-align: middle;
+  float: none;
+}
+.footer,
+.push {
+  height: 50px;
+}
+.after-navbar {
+  min-height: 100%;
+  height: auto;
+  margin: 0 auto -68px;
+  padding: 0 0 68px;
+}
+address {
+  color: #0f0f0f;
+  font-size: 80%;
+  margin: 0px;
+}
+body {
+  z-index: 0;
+  height: 100%;
+  padding-top: 50px;
+  background-color: $bgBody; 
+  color: $colBody;
+  font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-weight: 100;
+  letter-spacing: 1px;
+}
+html {
+  height: 100%;
+}
+.tab-content {
+  border-bottom: 1px solid #66cc66;
+  border-left: 1px solid #66cc66;
+  border-right: 1px solid #66cc66;
+}
+.affix {
+  top: 100px;
+}
+#carouselButtons {
+  bottom: 0px;
+  position: absolute;
+  right: 0px;
+}

@@ -1,39 +1,5 @@
-<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-    <div class="container-fluid">
-    	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-        <div class="navbar-header">
-        	<a href="/" class="pull-left"><%= image_tag("logo.png" , size: "160x80") %></a>
-            <a class="navbar-brand" href="#"></a>
-			        </div>
-        <div id="navbar" class="navbar-collapse collapse">
+<% provide :headeractiveclass, "aboutus" %>
 
-            <ul class="nav navbar-nav">
-                <li><a href="/"> Home</a></li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Races <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="upcoming">Upcoming Race</a></li>
-                            <li><a href="calendar">Race Calendar</a></li>
-                            <li><a href="rules">Rules and Regulations</a></li>
-                        </ul>
-                    </li>
-                <li class="active"><a href="aboutus"> About Us</a></li>
-                <li><a href="sponsors"> Sponsors</a></li>
-                <li><a href="team"> The team</a></li>
-                <li><a href="contactus"> Contact Us</a></li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-                    <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook"></i></a>                    
-                </ul>
-        </div>
-        
-    </div>
-    </nav>
 <div class="container after-navbar">
         <div class="row row-content ">
             <p style="padding:20px;"></p>

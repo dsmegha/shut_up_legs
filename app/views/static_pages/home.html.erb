@@ -1,44 +1,9 @@
-<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+<% provide :headeractiveclass, "home" %>
+<div class="container-fluid after-navbar">
     <div class="container-fluid">
-    	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-        <div class="navbar-header">
-        	<a href="/" class="pull-left"><%= image_tag("logo.png" , size: "160x80") %></a>
-            <a class="navbar-brand" href="#"></a>
-			        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-
-            <ul class="nav navbar-nav">
-                <li class="active"><a href="/"> Home</a></li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Races <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="upcoming">Upcoming Race</a></li>
-                            <li><a href="calendar">Race Calendar</a></li>
-                            <li><a href="rules">Rules and Regulations</a></li>
-                        </ul>
-                    </li>
-                <li><%= link_to "About Us", aboutus_path %></li>
-                <li><a href="sponsors"> Sponsors</a></li>
-                <li><a href="team"> The team</a></li>
-                <li><a href="contactus"> Contact Us</a></li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-                    <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook"></i></a>                    
-                </ul>
-        </div>
-        
-    </div>
-    </nav>
-    <div class="container-fluid after-navbar">   
         <div class="row row-content without-padd">
            <div class="col-xs-12 without-padd">
                 <div id="mycarousel" class="carousel slide" data-ride="carousel">
-                    <!-- Indicators -->
                     <ol class="carousel-indicators">
                         <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
                         <li data-target="#mycarousel" data-slide-to="1"></li>
@@ -49,14 +14,12 @@
                     	<div class="carousel-caption">
                             <h2>Shut Up Legs </h2>
                             <p>Featuring Mysore's first Series of Races.<br> ITTs, mass starts, Road Races, MTB Races and much more. Check out the race calender at </p>
-                            <p><a class="btn btn-primary btn-sm" href="calendar">More &raquo;</a></p>
-                            
-                        </div>
-                        
+                            <p><a class="btn btn-primary btn-sm" href="calendar">More &raquo;</a></p>                            
+                        </div>                        
                     </div>
                     <div class="item">
                         <a href="#">
-                        <%= image_tag("bg1.jpg", class: "img-responsive") %>
+                        <%= image_tag("bg2.jpg", class: "img-responsive") %>
                         </a>
                         <div class="carousel-caption">
                             <h2>ITT ROAD RACE </h2>
@@ -65,23 +28,26 @@
                             <span class="label label-danger label-sm">Register</span>
                         </div>
                     </div>                    
+                    </div>
+                    <a class="left carousel-control" href="#mycarousel" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#mycarousel" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
                 </div>
-                    <!-- Controls -->
-                <a class="left carousel-control" href="#mycarousel" role="button" data-slide="prev">
-                	
-                </a>
-                <a class="right carousel-control" href="#mycarousel" role="button" data-slide="next">
-                    
-                </a>
-                    
+            </div>
+        </div> 
+    </div>
+    <div class="container">
+        <div class="row row-content">
+            <div class ="col-xs-12">
+                <h1>About us </h1>
+                A constant fight in the mind to reach your goal. ‘Shut up legs’ was devised to spread the racing culture amongst passionate cyclists in Mysore. A series of races will be held throughout the year which will include both road biking and mountain biking. For the novices, here’s a perfect exposure to racing. If you are from Mysore, grab this opportunity to explore your own city. If you are not, all the more reason to come visit. So what are you waiting for? Get your bums on the saddle and embark upon this journey through the undulations, curves and paved roads.
             </div>
         </div>
-    </div> 
-    <div class="row row-content">
-        <div class ="col-xs-12">
-            <h1>About us </h1>
-            A constant fight in the mind to reach your goal. ‘Shut up legs’ was devised to spread the racing culture amongst passionate cyclists in Mysore. A series of races will be held throughout the year which will include both road biking and mountain biking. For the novices, here’s a perfect exposure to racing. If you are from Mysore, grab this opportunity to explore your own city. If you are not, all the more reason to come visit. So what are you waiting for? Get your bums on the saddle and embark upon this journey through the undulations, curves and paved roads.
-
-    </div>
     </div>
 </div>
+<p style="padding:15px;"></p>

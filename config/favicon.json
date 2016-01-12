@@ -1,0 +1,30 @@
+{
+    "master_picture": "app/assets/images/shut up legs logo_4-01.png",
+    "favicon_design": {
+        "ios": {
+            "picture_aspect": "no_change"
+        },
+        "desktop_browser": [
+
+        ],
+        "windows": {
+            "picture_aspect": "no_change",
+            "background_color": "#da532c",
+            "on_conflict": "override"
+        },
+        "android_chrome": {
+            "picture_aspect": "no_change",
+            "theme_color": "#ffffff",
+            "manifest": {
+                "name": "shutuplegs",
+                "display": "browser",
+                "orientation": "not_set",
+                "on_conflict": "override"
+            }
+        }
+    },
+    "settings": {
+        "scaling_algorithm": "Mitchell",
+        "error_on_image_too_small": false
+    }
+}
