@@ -15,3 +15,9 @@
 /log/*
 !/log/.keep
 /tmp
+
+#Ignore the secret Key
+/config/secrets.yml
+
+#Ignore assest-pipelin
+/public/*
