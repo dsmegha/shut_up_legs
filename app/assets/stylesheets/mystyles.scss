@@ -51,16 +51,16 @@ $colBody        : #0c0810;
   padding: 0px;
 }
 .carousel {
-  background: $bgDefault;
+  background: $bgBody;
 }
 .carousel .item {
-  height: 600px;
+  height: 570px;
 }
 .carousel .item img {
-  left: 0;
-width: 100%;
-  position: absolute;
-  top: -200px;
+  height: 570px;
+  margin-left: auto;
+    margin-right: auto 
+
 }
 
 .img-thumbnail {
@@ -75,15 +75,16 @@ width: 100%;
   text-align: center;
 }  
  
-.img-responsive2 {  
-    max-width: 15%;
-    height: auto;
+.img-responsive2 {      
+    height: 60px;
+    width: auto;
 }
 
 .navbar-default {
   background-color: $bgDefault;
   border-color: $bgHighlight;
   font-size: 1.4em;
+  min-height: 60px;
   .navbar-brand {
     color: $colDefault;
     &:hover, &:focus { 
@@ -156,7 +157,7 @@ width: 100%;
   min-height: 100%;
   height: auto;
   margin: 0 auto -68px;
-  padding: 0 0 68px;
+  padding: 28px 0 68px;
 }
 address {
   color: #0f0f0f;
