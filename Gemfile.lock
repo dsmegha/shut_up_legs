@@ -53,6 +53,8 @@ GEM
       execjs
     coffee-script-source (1.10.0)
     concurrent-ruby (1.0.0)
+    css_splitter (0.4.4)
+      sprockets (>= 2.0.0)
     debug_inspector (0.0.2)
     domain_name (0.5.25)
       unf (>= 0.0.5, < 1.0.0)
@@ -170,6 +172,7 @@ DEPENDENCIES
   bootstrap-social-rails
   byebug
   coffee-rails (~> 4.1.0)
+  css_splitter
   font-awesome-rails
   jbuilder (~> 2.0)
   jquery-rails
