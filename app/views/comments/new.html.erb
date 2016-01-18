@@ -1,2 +1,37 @@
-<h1>Comments#new</h1>
-<p>Find me in app/views/comments/new.html.erb</p>
+<% provide :headeractiveclass, "contactus" %>
+<div class="container after-navbar">
+        <div class="row row-content">
+            <h1> Get in touch</h1>
+            <div class="col-xs-12 col-sm-3 col-sm-push-9">
+                Feel free to write to us at info@shutuplegs.in
+            </div>
+            <div class="col-xs-12 col-sm-9 col-sm-pull-3">
+            	<table class = "table-responsive table-form">
+            		<%= form_for(@comment) do |f| %>
+            		<%= render 'shared/error_messages' %>
+            		<tr>
+            			<th><%= f.label :name %></th>
+            			<td><%= f.text_field :name, class: 'form-control' %></td>
+            		</tr>
+            		<tr>
+            			<th><%= f.label :email %></th>
+            			<td><%= f.email_field :email, class: 'form-control' %></td>
+            		</tr>
+            		<tr>
+            			<th><%= f.label :subject %></th>
+            			<td><%= f.text_field :subject, class: 'form-control' %></td>
+            		</tr>
+            		<tr>
+            			<th><%= f.label :message %></th>
+            			<td><%= f.text_area :message, size: "100x10", class: 'form-control' %></td>
+            		</tr>
+            	</table>
+
+      <%= f.submit "Submit", class: "btn btn-primary" %>
+    <% end %>
+            </div>
+
+        </div>
+        <p style="padding:20px;"></p>
+        
+</div>

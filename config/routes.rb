@@ -7,7 +7,7 @@ Rails.application.routes.draw do
 
   get 'calendar' => 'static_pages#calendar'
 
-  get 'contactus' => 'static_pages#contactus'
+  get 'contactus' => 'comments#new'
 
   get 'rules' => 'static_pages#rules'
 
@@ -16,6 +16,8 @@ Rails.application.routes.draw do
   get 'team' => 'static_pages#team'
 
   get 'upcoming' => 'static_pages#upcoming'
+  resources :comments
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
