@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160118125145) do
+ActiveRecord::Schema.define(version: 20160119153220) do
 
   create_table "comments", force: :cascade do |t|
     t.string   "name"
@@ -21,5 +21,31 @@ ActiveRecord::Schema.define(version: 20160118125145) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
+
+  create_table "races", force: :cascade do |t|
+    t.string   "name"
+    t.string   "racetype"
+    t.date     "date"
+    t.string   "location"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "riders", force: :cascade do |t|
+    t.string   "name"
+    t.string   "email"
+    t.string   "bike"
+    t.string   "category"
+    t.boolean  "paid"
+    t.string   "emergency"
+    t.string   "gender"
+    t.integer  "age"
+    t.string   "transaction_id"
+    t.integer  "race_id"
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
+  end
+
+  add_index "riders", ["race_id"], name: "index_riders_on_race_id"
 
 end

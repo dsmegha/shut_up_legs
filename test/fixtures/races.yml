@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  racetype: MyString
+  date: 2016-01-19
+  location: MyString
+
+two:
+  name: MyString
+  racetype: MyString
+  date: 2016-01-19
+  location: MyString

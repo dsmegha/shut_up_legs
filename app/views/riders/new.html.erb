@@ -1,0 +1,84 @@
+<% provide :headeractiveclass, "contactus" %>
+<div class="container after-navbar">
+	<div class="row row-content">
+		<div class="col-xs-12">
+	<h1> Register now!</h1>
+	Registration is a two step process. Make the payment by transfering the amount  to the account mentioned below. Then fill the registraion form and include the transaction id. You will recieve a confirmation mail within one working day after we recieve the money and the registration.
+</div>
+</div>
+<div class="row row-content">
+	<div class="col-xs-12 col-sm-4">
+	<h3>Step 1: </h3><br>Transfer the amount (300/- for male and female categories and 100/- for Under-18) to the following account. <br>
+	<div class="text-center">
+	Name : Roohi B R<br>
+	Bank : IDBI Bank Ltd<br>
+	Branch : Kuvempunagar, Mysore<br>
+	Account number : 0281104000185745<br>
+	IFSC code : IBKL0000281<br>
+        </div>
+    </div>
+            
+            
+            <div class="col-xs-12 col-sm-8">
+            	<h3>Step 2:</h3><br>
+            	<%= form_for(@rider) do |f| %>
+                <div class = "row row-content">
+                    <div class="col-xs-2 text-right"><%= f.label :name, class: 'required' %></div>
+                    <div class="col-xs-10"><%= f.text_field :name, :required => true, class: 'form-control' %></div>
+            	</div>
+                <div class = "row row-content">
+            		<div class="col-xs-2 text-right"><%= f.label :email, class: 'required' %></div>
+            		<div class="col-xs-10"><%= f.email_field :email, :required => true, class: 'form-control' %></div>
+            	</div>
+                <div class = "row row-content">
+                	<div class="col-xs-2 text-right"><%= f.label :gender, class: 'required' %></div>
+                	<div class="col-xs-10">
+                		<%= f.radio_button :gender, 'male',:checked => true %> 
+  						<%= f.label :gender, 'Male', :value => 'male' %>
+  						<%= f.radio_button :gender, 'female' %>
+  						<%= f.label :gender, 'Female', :value => 'female' %>
+            		</div>            		
+            	</div>
+            	<div class = "row row-content">
+            		<div class="col-xs-2 text-right"><%= f.label :age, class: 'required' %></div>
+            		<div class="col-xs-10"><%= f.number_field :age, :required => true, class: 'form-control' %></div>
+            	</div>
+            	<div class = "row row-content">
+                	<div class="col-xs-2 text-right"><%= f.label :category, class: 'required' %></div>
+                	<div class="col-xs-10">
+                		<%= f.radio_button :category, 'male', :checked => true %> 
+  						<%= f.label :category, 'Male', :value => 'male'  %>
+  						<%= f.radio_button :category, 'female' %>
+  						<%= f.label :category, 'Female', :value => 'female' %>
+  						<%= f.radio_button :category, 'u18' %>
+  						<%= f.label :category, 'Under-18', :value => 'u18' %>
+            		</div>            		
+            	</div>
+            	<div class = "row row-content">
+            		<div class="col-xs-2 text-right"><%= f.label :transaction_id, 'Transaction ID', class: 'required' %></div>
+            		<div class="col-xs-10"><%= f.text_field :transaction_id, :required => true, class: 'form-control' %></div> 
+            	</div>
+                <div class = "row row-content">
+                	<div class="col-xs-2 text-right"><%= f.label :bike, 'Type of Bike', class: 'required' %></div>
+                	<div class="col-xs-10">
+                		<%= f.radio_button :bike, 'mtb' %> 
+  						<%= f.label :bike, 'MTB', :value => 'mtb' %>
+  						<%= f.radio_button :bike, 'hybrid' %>
+  						<%= f.label :bike, 'Hybrid', :value => 'hybrid' %>
+  						<%= f.radio_button :bike, 'road', :checked => true %>
+  						<%= f.label :bike, 'Road', :value => 'road' %>
+            		</div>            		
+            	</div>
+            	<div class = "row row-content">
+            		<div class="col-xs-2 text-right"><%= f.label :emergency, 'Emergency contact Details', class: 'required' %></div>
+            		<div class="col-xs-10"><%= f.text_field :emergency, :required => true, class: 'form-control' %></div> 
+            	</div>
+            	</div>
+            	<div class="text-center">
+                <%= f.submit "Submit", class: "btn btn-primary" %>
+            </div>
+                <% end %>
+            
+        </div>
+        <p style="padding:20px;"></p>        
+</div>

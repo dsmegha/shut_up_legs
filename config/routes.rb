@@ -1,4 +1,12 @@
 Rails.application.routes.draw do
+  get 'riders/new'
+
+  get 'riders/create'
+
+  get 'users/new'
+
+  get 'users/create'
+
   get 'comments/new'
 
   root 'static_pages#home'
@@ -16,7 +24,9 @@ Rails.application.routes.draw do
   get 'team' => 'static_pages#team'
 
   get 'upcoming' => 'static_pages#upcoming'
+  get 'register' => 'riders#new'
 resources :comments, only: [:new, :create]
+resources :riders, only: [:new, :create]
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
