@@ -6,32 +6,27 @@
                 Feel free to write to us at info@shutuplegs.in
             </div>
             <div class="col-xs-12 col-sm-9 col-sm-pull-3">
-            	<table class = "table-responsive table-form">
-            		<%= form_for(@comment) do |f| %>
-            		<%= render 'shared/error_messages' %>
-            		<tr>
-            			<th><%= f.label :name %></th>
-            			<td><%= f.text_field :name, class: 'form-control' %></td>
-            		</tr>
-            		<tr>
-            			<th><%= f.label :email %></th>
-            			<td><%= f.email_field :email, class: 'form-control' %></td>
-            		</tr>
-            		<tr>
-            			<th><%= f.label :subject %></th>
-            			<td><%= f.text_field :subject, class: 'form-control' %></td>
-            		</tr>
-            		<tr>
-            			<th><%= f.label :message %></th>
-            			<td><%= f.text_area :message, size: "100x10", class: 'form-control' %></td>
-            		</tr>
-            	</table>
-
-      <%= f.submit "Submit", class: "btn btn-primary" %>
-    <% end %>
+            	<%= form_for(@comment) do |f| %>
+            	<%= render 'shared/error_messages' %>
+                <div class = "row row-content">
+                    <div class="col-xs-2 text-right"><%= f.label :name, class: 'required' %></div>
+                    <div class="col-xs-10"><%= f.text_field :name, :required => true, class: 'form-control' %></div>
+            	</div>
+                <div class = "row row-content">
+            		<div class="col-xs-2 text-right"><%= f.label :email, class: 'required' %></div>
+            		<div class="col-xs-10"><%= f.email_field :email, :required => true, class: 'form-control' %></div>
+            	</div>
+                <div class = "row row-content">
+            		<div class="col-xs-2 text-right"><%= f.label :subject, class: 'required' %></div>
+            		<div class="col-xs-10"><%= f.text_field :subject, :required => true, class: 'form-control' %></div>
+            	</div>
+                <div class = "row row-content">
+            		<div class="col-xs-2 text-right"><%= f.label :message, class: 'required' %></div>
+            		<div class="col-xs-10"><%= f.text_area :message, :required => true, size: "100x10", class: 'form-control' %></div>
+            	</div>
+                <%= f.submit "Submit", class: "btn btn-primary" %>
+                <% end %>
             </div>
-
         </div>
-        <p style="padding:20px;"></p>
-        
+        <p style="padding:20px;"></p>        
 </div>

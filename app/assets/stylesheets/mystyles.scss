@@ -198,3 +198,5 @@ html {
 .alert {
   padding: 50px;
 }
+
+label.required:before{content:"*"}
