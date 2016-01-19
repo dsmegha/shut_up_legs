@@ -8,7 +8,7 @@ class RidersController < ApplicationController
   	@rider.race_id = 1
   	if @rider.save
   		flash[:success] = "Thanks for Registering! We will get back to you shortly."
-		redirect_to '/'    
+		redirect_to '/register'    
 	else
       render 'new'
     end
