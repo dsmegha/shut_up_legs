@@ -16,8 +16,7 @@ Rails.application.routes.draw do
   get 'team' => 'static_pages#team'
 
   get 'upcoming' => 'static_pages#upcoming'
-  resources :comments
-
+resources :comments, only: [:new, :create]
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
