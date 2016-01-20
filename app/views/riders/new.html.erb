@@ -1,4 +1,4 @@
-<% provide :headeractiveclass, "contactus" %>
+<% provide :headeractiveclass, "races" %>
 <div class="container after-navbar">
 	<div class="row row-content">
 		<div class="col-xs-12">
@@ -23,16 +23,16 @@
             	<h3>Step 2:</h3><br>
             	<%= form_for(@rider) do |f| %>
                 <div class = "row row-content">
-                    <div class="col-xs-3 text-right"><%= f.label :name, class: 'required' %></div>
-                    <div class="col-xs-9"><%= f.text_field :name, :required => true, class: 'form-control' %></div>
+                    <div class="col-xs-4 text-right"><%= f.label :name, class: 'required' %></div>
+                    <div class="col-xs-8"><%= f.text_field :name, :required => true, class: 'form-group' %></div>
             	</div>
                 <div class = "row row-content">
-            		<div class="col-xs-3 text-right"><%= f.label :email, class: 'required' %></div>
-            		<div class="col-xs-9"><%= f.email_field :email, :required => true, class: 'form-control' %></div>
+            		<div class="col-xs-4 text-right"><%= f.label :email, class: 'required' %></div>
+            		<div class="col-xs-8"><%= f.email_field :email, :required => true, class: 'form-group' %></div>
             	</div>
                 <div class = "row row-content">
-                	<div class="col-xs-3 text-right"><%= f.label :gender, class: 'required' %></div>
-                	<div class="col-xs-9">
+                	<div class="col-xs-4 text-right"><%= f.label :gender, class: 'required' %></div>
+                	<div class="col-xs-8">
                 		<%= f.radio_button :gender, 'male',:checked => true %> 
   						<%= f.label :gender, 'Male', :value => 'male' %>
   						<%= f.radio_button :gender, 'female' %>
@@ -40,27 +40,27 @@
             		</div>            		
             	</div>
             	<div class = "row row-content">
-            		<div class="col-xs-3 text-right"><%= f.label :age, class: 'required' %></div>
-            		<div class="col-xs-9"><%= f.number_field :age, :required => true, class: 'form-control' %></div>
+            		<div class="col-xs-4 text-right"><%= f.label :age, class: 'required' %></div>
+            		<div class="col-xs-8"><%= f.number_field :age, :required => true, class: 'form-group' %></div>
             	</div>
             	<div class = "row row-content">
-                	<div class="col-xs-3 text-right"><%= f.label :category, class: 'required' %></div>
-                	<div class="col-xs-9">
+                	<div class="col-xs-4 text-right"><%= f.label :category, class: 'required' %></div>
+                	<div class="col-xs-8">
                 		<%= f.radio_button :category, 'male', :checked => true %> 
-  						<%= f.label :category, 'Male', :value => 'male'  %>
+  						<%= f.label :category, 'Men', :value => 'male'  %>
   						<%= f.radio_button :category, 'female' %>
-  						<%= f.label :category, 'Female', :value => 'female' %>
+  						<%= f.label :category, 'Women', :value => 'female' %>
   						<%= f.radio_button :category, 'u18' %>
   						<%= f.label :category, 'Under-18', :value => 'u18' %>
             		</div>            		
             	</div>
             	<div class = "row row-content">
-            		<div class="col-xs-3 text-right"><%= f.label :transaction_id, 'Transaction ID', class: 'required' %></div>
-            		<div class="col-xs-9"><%= f.text_field :transaction_id, :required => true, class: 'form-control' %></div> 
+            		<div class="col-xs-4 text-right"><%= f.label :transaction_id, 'Transaction ID', class: 'required' %></div>
+            		<div class="col-xs-8"><%= f.text_field :transaction_id, :required => true, class: 'form-group' %></div> 
             	</div>
                 <div class = "row row-content">
-                	<div class="col-xs-3 text-right"><%= f.label :bike, 'Type of Bike', class: 'required' %></div>
-                	<div class="col-xs-9">
+                	<div class="col-xs-4 text-right"><%= f.label :bike, 'Type of Bike', class: 'required' %></div>
+                	<div class="col-xs-8">
                 		<%= f.radio_button :bike, 'mtb' %> 
   						<%= f.label :bike, 'MTB', :value => 'mtb' %>
   						<%= f.radio_button :bike, 'hybrid' %>
@@ -70,8 +70,8 @@
             		</div>            		
             	</div>
             	<div class = "row row-content">
-            		<div class="col-xs-3 text-right"><%= f.label :emergency, 'Emergency contact Details', class: 'required' %></div>
-            		<div class="col-xs-9"><%= f.text_field :emergency, :required => true, class: 'form-control' %></div> 
+            		<div class="col-xs-4 text-right"><%= f.label :emergency, 'Emergency contact Details', class: 'required' %></div>
+            		<div class="col-xs-8"><%= f.text_field :emergency, :required => true, class: 'form-group' %></div> 
             	</div>
             	</div>
             	<div class="text-center">
