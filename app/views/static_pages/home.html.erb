@@ -3,7 +3,7 @@
     <div class="container-fluid">
         <div class="row row-content without-padd">
            <div class="col-xs-12 without-padd">
-                <div id="mycarousel" class="carousel slide" data-ride="carousel">
+                <div id="mycarousel" class="hidden-xs carousel slide" data-ride="carousel">
                     <ol class="carousel-indicators">
                         <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
                         <li data-target="#mycarousel" data-slide-to="1"></li>
@@ -11,13 +11,13 @@
                     <div class="carousel-inner" role="listbox">
                     <div class="item active">
                     	<%= image_tag("bg3.jpg", class: "img-responsive") %>
-                        <div class="carousel-caption">
+                        <div class="carousel-caption bg3">
                             <a class="btn btn-danger btn-lg" href="/calendar">Race Calender</a><br>
                         </div>
                     </div>
                     <div class="item">
                         <%= image_tag("bg4.jpg", class: "img-responsive") %>
-                        <div class="carousel-caption text-right">
+                        <div class="carousel-caption bg4">
                             <a class="btn btn-danger btn-lg" href="/register">Register Now</a><br>
                         </div>
                     </div>                    
@@ -31,6 +31,11 @@
                         <span class="sr-only">Next</span>
                     </a>
                 </div>
+                <%= image_tag("bg4.jpg", class: "img-responsive visible-xs") %>
+                <div class="carousel-caption visible-xs bg4">
+                    <a class="btn btn-danger btn-sm" href="/register">Register Now</a><br>
+                </div>
+                
             </div>
         </div> 
     </div>

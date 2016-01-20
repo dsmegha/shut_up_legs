@@ -3,11 +3,11 @@
 @import "bootstrap-social";
 
 
-$bgDefault      : #a8a8a8;
-$bgHighlight    : #a8a8a8;
-$colDefault     : #545454;
-$colHighlight   : #ffffff;
-$colActive      : #000000;
+$bgDefault      : #545454;
+$bgHighlight    : #545454;
+$colDefault     : #bdbdbd;
+$colHighlight   : #000000;
+$colActive      : #ffffff;
 $bgBody         : #f1f1f1;
 $colBody        : #151515;
 
@@ -67,11 +67,25 @@ $colBody        : #151515;
   margin-left: auto;
   margin-right: auto;
 }
-.carousel-caption {
+.bg3 {
     right: 0%;
     left: 50%;
     padding-bottom: 60px;
 }
+
+.bg4 {
+    right: 40%;
+    left: 0%;
+    top: 20%;
+    
+}
+
+#carouselButtons {
+  bottom: 0px;
+  position: absolute;
+  right: 0px;
+}
+
 .img-thumbnail {
   padding: 0;
 }
@@ -79,13 +93,15 @@ $colBody        : #151515;
 .table-bordered > thead > tr > th, .table-bordered > tbody > tr > th, .table-bordered > tfoot > tr > th, .table-bordered > thead > tr > td, .table-bordered > tbody > tr > td, .table-bordered > tfoot > tr > td {
    padding: 10px; 
 }
+.table-bordered > tbody > tr > td, .table-bordered > tbody > tr > th,{
+    border: 1px solid transparent;
+}
 .table-calendar > thead > tr > th, .table-calendar > tbody > tr > th, .table-calendar > tfoot > tr > th, .table-calendar > thead > tr > td, .table-calendar > tbody > tr > td, .table-calendar > tfoot > tr > td {
-  border: 1px solid #000000;
+  border: 1px solid ;
   text-align: center;
 }  
  
 .table-form > thead > tr > th, .table-calendar > tbody > tr > th, .table-form > tfoot > tr > th, .table-form > thead > tr > td, .table-form > tbody > tr > td, .table-form > tfoot > tr > td {
-  border: 0px;
   padding: 10px;
 }
 
@@ -114,6 +130,7 @@ $colBody        : #151515;
     > .active {
       > a, > a:hover, > a:focus {
         color: $colActive;
+        font-weight: bold;
         background-color: $bgHighlight; }}
     > .open {
       > a, > a:hover, > a:focus {
@@ -201,11 +218,7 @@ html {
 .affix {
   top: 100px;
 }
-#carouselButtons {
-  bottom: 0px;
-  position: absolute;
-  right: 0px;
-}
+
 
 .alert {
   margin: 50px 50px 0 50px;
