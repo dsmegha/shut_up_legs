@@ -3,13 +3,13 @@
 @import "bootstrap-social";
 
 
-$bgDefault      : #A186BD;
-$bgHighlight    : #A186BD;
-$colDefault     : #593f73;
-$colHighlight   : #3f2c52;
+$bgDefault      : #d3d3d3;
+$bgHighlight    : #d3d3d3;
+$colDefault     : #545454;
+$colHighlight   : #ffffff;
 $colActive      : #000000;
-$bgBody         : #E9CEFF;
-$colBody        : #0c0810;
+$bgBody         : #f1f1f1;
+$colBody        : #151515;
 
 .row-header {
   margin: 0px auto;
@@ -58,8 +58,14 @@ $colBody        : #0c0810;
 }
 .carousel .item img {
   height: 100%;
+  width: auto;  
+}
+
+.carousel-inner > .item > img, .carousel-inner > .item > a > img {
+  height: 100%;
+  max-width: 100%;
   margin-left: auto;
-    margin-right: auto
+  margin-right: auto;
 }
 
 .img-thumbnail {
@@ -140,6 +146,8 @@ $colBody        : #0c0810;
     background-color: $bgDefault;
     color: $colDefault;
     border: 0;
+    &:hover, &:focus {
+        color: $colHighlight; }
   }
 .navbar-right{
   padding-right: 50px;

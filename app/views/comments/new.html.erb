@@ -24,7 +24,12 @@
             		<div class="col-xs-2 text-right"><%= f.label :message, class: 'required' %></div>
             		<div class="col-xs-10"><%= f.text_area :message, :required => true, size: "100x10", class: 'form-control' %></div>
             	</div>
+                <div class = "row row-content">
+                    <div class="col-xs-12 text-center">
+                        <br>
                 <%= f.submit "Submit", class: "btn btn-primary" %>
+            </div>
+        </div>
                 <% end %>
             </div>
         </div>
